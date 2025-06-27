@@ -34,7 +34,18 @@
 			<version>1.0.2</version>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+	  <repository>
+	    <id>releases</id>
+	    <name>Releases Repository</name>
+	    <url>https://maven.pkg.github.com/VanessaWendling/POSTECH_SOAT_DevOps_Desafio_Disciplina</url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>snapshots</id>
+	    <name>Snapshots Repository</name>
+	    <url>https://maven.pkg.github.com/VanessaWendling/POSTECH_SOAT_DevOps_Desafio_Disciplina</url>
+	  </snapshotRepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
