@@ -52,7 +52,7 @@ jobs:
     environment:
       name: stg
     needs: publish
-    if: hithub.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/develop'
     steps:
       - name: Deploy
         shell: bash
@@ -73,7 +73,7 @@ jobs:
   
   deploy-Prod:
     runs-on: ubuntu-latest
-    if: githib.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     environment:
       name: prod
     needs: publish
